@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section class="home-info">
+  <h1>👋 欢迎来到我的博客</h1>
+  <p>记录学习 / 项目 / 想法</p>
+</section>
+
+<h2>📚 最新文章</h2>
+
+{{ range first 10 .Site.RegularPages }}
+  <div style="margin-bottom: 15px;">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br/>
+    <small>{{ .Date.Format "2006-01-02" }}</small>
+  </div>
+{{ end }}
+
+{{ end }}

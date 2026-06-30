@@ -1,4 +1,32 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://Evolve28.github.io/My-Blog/"
 languageCode = "zh-cn"
-title = "My Blog"
+title = "Charlie 的博客"
 theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+
+[params.homeInfoParams]
+Title = "👋 你好，我是 Charlie"
+Content = "这是我的个人博客，用来记录学习、项目和生活。"
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
